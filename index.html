@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="notes">
+            <div class="row">
+                <div class="form1">
+                    <div class="box1">
+                        <label>text :</label>
+                        <input type="text" name="task-content" id="pText" required />
+                    </div>
+                    <div class="box2">
+                        <label class="form-label">time :</label>
+                        <input type="date" name="task-date" id="pDate" required />
+                    </div>
+                    <div class="box3">
+                        <label class="form-label">date :</label>
+                        <input type="time" name="task-time" id="pTime" required />
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <button type="button" id="addNewProductButton" alt="Login" class="btn btn-outline-success">
+                    <span> Add Notes </span>
+                </button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="container-notes" id="notesTable"></div>
+        </div>
+
+        <script src="task.js"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>

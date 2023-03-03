@@ -1,0 +1,105 @@
+body {
+    background-image: url(images/task\ board33.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+
+form div input {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 95%;
+    background-color: transparent;
+}
+
+
+.container-notes {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    background-color: transparent;
+    color: #b62fd4;
+}
+
+
+
+.note-style {
+    width: 150px;
+    height: 220px;
+    position: relative;
+    padding: 10px 20px;
+    display: block;
+    list-style-type: none;
+    background-image: url(images/notebg.png);
+    animation-name: fadeNote;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+.note-style .note-body {
+    height: 120px;
+    overflow: auto;
+    word-break: break-all;
+}
+
+.note-foot {
+    color: black;
+    font-weight: bold;
+    /* padding-top: 30px; */
+    margin-top: auto;
+}
+
+.d-btn {
+    opacity: 0;
+    transition: 500ms !important;
+
+}
+
+.note:hover .d-btn {
+    opacity: 1;
+}
+
+.note-style::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes fadeNote {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.form1 {
+    text-align: center;
+    padding-top: 170px;
+}
+
+.box1 {
+    padding-left: 40px;
+
+
+}
+
+.box2 {
+    padding-right: 20px;
+}
+
+.box3 {
+    padding-right: 76px;
+
+}
+
+
+form div label {
+    color: #d000ff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
